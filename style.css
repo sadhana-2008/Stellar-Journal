@@ -1,0 +1,140 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Background image */
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url('https://i.pinimg.com/736x/05/86/70/058670f8d44db761d82cd4e71893ace2.jpg'); /* Replace with the path to your generated image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #F5F5F5;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: rgba(25, 25, 112, 0.8);
+    padding: 10px;
+    color: beige;
+    text-align: center;
+    text-shadow: #fcecc2;
+}
+
+/* Container styling */
+.container {
+    padding: 10px;
+}
+
+/* Blog container styling */
+.blog-container {
+    padding: 15px;
+    width: 25%;
+    background-color: rgba(25, 25, 112, 0.8);
+    border-radius: 10px;
+    color: #F5F5F5;
+    margin: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Blog container headings */
+.blog-container h2 {
+    color: whitesmoke;
+    font-family: "Playfair Display", serif;
+}
+
+/* Blog container button */
+.blog-container button {
+    background-color: white;
+    color: #302f4e;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: none;
+    margin-top: 10px;
+}
+
+/* Add button styling */
+.add-button {
+    background-color: #302f4e;
+    color: #fcecc2; /* Correct color value */
+    border-radius: 100%;
+    padding: 20px 30px;
+    font-size: 40px;
+    border: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.add-button:hover {
+    border: 1px solid black;
+    background-color: whitesmoke;
+}
+
+/* Popup overlay styling */
+.popupoverlay {
+    background-color: #F8F8FF;
+    opacity: 0.8;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+
+/* Popup box styling */
+.popup-box {
+    background-color: #302f4e;
+    color: white;
+    width: 40%;
+    padding: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    z-index: 2;
+    display: none;
+}
+
+/* Popup form inputs */
+.popup-box input,
+.popup-box textarea {
+    background: transparent;
+    color: white; /* Updated color */
+    border: none;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    border-bottom: solid #f9f9fa 2px;
+}
+
+.popup-box textarea {
+    border: solid #f9f9fa 2px; /* Updated color */
+}
+
+/* Placeholder styling */
+.popup-box input::placeholder,
+.popup-box textarea::placeholder {
+    color: rgb(200, 200, 200); /* Lighter color for placeholders */
+}
+
+/* Popup box buttons */
+.popup-box button {
+    background-color: #f9f9fa; /* Updated color */
+    padding: 10px 20px;
+    border: none;
+    color: #302f4e;
+    margin: 5px;
+}
+
+/* Remove focus outline */
+.popup-box input:focus,
+.popup-box textarea:focus {
+    outline: whitesmoke;
+}

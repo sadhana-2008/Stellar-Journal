@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellar Journal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <h1> ⋒ ⋆ Stellar Journal ⋆ ⋒ </h1>
+    </div>
+    <div class="container">
+        <div class="blog-container">
+            <h2>Shine Bright Like a Star</h2>
+            <h5>me</h5>
+            <p>Embrace the vibrant hues of your soul, letting them radiate outward. Never allow the shadows of doubt or negativity to dim your brilliance. Cultivate your passions, nourish your spirit, and let your unique light illuminate the world around you. Remember, your shine is a gift, and it deserves to be celebrated, shared, and cherished.</p>
+            <button onclick="deleteBlog(event)">Delete</button>
+        </div>
+    </div>
+
+    <div class="popupoverlay" id="popup-overlay"></div>
+    <div class="popup-box" id="popup-box">
+        <h2>Add Blog</h2>
+        <form>
+            <input type="text" placeholder="Blog Title" id="blog-title-input" required>
+            <input type="text" placeholder="Blog Author" id="blog-author-input" required>
+            <textarea placeholder="Blog Content" id="blog-content-input" required></textarea>
+            <button type="button" id="add-blog">ADD</button>
+            <button type="button" id="cancel-popup">CANCEL</button>
+        </form>
+    </div>
+
+    <button class="add-button" id="add-popup-button">+</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
